@@ -1,4 +1,4 @@
-import React, { use, type ComponentType, type ReactElement, type ReactNode } from 'react'
+import React, {type ComponentType, type ReactElement, type ReactNode } from 'react'
 import { useWindowStore } from '../store/windows';
 import { Modal, TitleBar, useModal } from '@react95/core';
 

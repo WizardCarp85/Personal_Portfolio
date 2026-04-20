@@ -1,6 +1,6 @@
 import { type ComponentType } from "react";
 import { useAuth } from "../store/auth";
-import { Input, Modal,TitleBar } from "@react95/core";
+import { Button, Input, Modal,TitleBar } from "@react95/core";
 import { Keys } from "@react95/icons";
 
 function Login() {
@@ -26,12 +26,16 @@ function Login() {
                     <p style={{margin:"0"}}>Type your Username and Password to login to your account</p>
                     <div className="flex items-center gap-2">
                         <p style={{margin:"0"}}>Username:</p>
-                        <Input defaultValue={"admin"} disabled/>
+                        <Input defaultValue={"WizardCarp"} disabled/>
                     </div>
                     <div className="flex items-center gap-2">
                         <p style={{margin:"0"}}>Password:</p>
-                        <Input defaultValue={"admin"} type="password" disabled/>
+                        <Input defaultValue={"WizardCarp"} type="password" disabled/>
                     </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                    <Button style={{width:"100%"}} onClick={()=>login()}>OK</Button>
+                    <Button style={{width:"100%"}}>Cancel</Button>
                 </div>
             </div>
         </Modal.Content>

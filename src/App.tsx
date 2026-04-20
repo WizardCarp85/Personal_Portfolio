@@ -1,6 +1,9 @@
+import { Video } from "@react95/core";
 import Login from "./components/Login";
 import { useAuth } from "./store/auth";
 import { AGENTS,ClippyProvider } from "@react95/clippy";
+import { Amovie2 } from "@react95/icons";
+import DesktopIcon from "./components/Desktopicon";
 
 function App() {
   const authenticated = useAuth((state)=>state.authenticated);
@@ -16,7 +19,10 @@ function App() {
         authenticated && (
           <ClippyProvider agentName={AGENTS.MERLIN}>
             <div className="fixed">
-              {/* Desktop icons */}
+              <DesktopIcon icon={<Amovie2/>} name="video">
+              <Video w={"420px"} src=""/>
+              </DesktopIcon>
+              
             </div>
           </ClippyProvider>
         )

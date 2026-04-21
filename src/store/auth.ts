@@ -1,13 +1,13 @@
-import { create } from "zustand";
+import { create } from 'zustand'
 
 interface AuthState {
-    authenticated: boolean;
-    login:()=>void;
-    logout:()=>void;
+  authinicated: boolean;
+  login: () => void;
+  logout: () => void;
 }
 
-export const useAuth=create<AuthState>((set)=>({
-    authenticated:false,
-    login:()=>set({authenticated:true}),
-    logout:()=>set({authenticated:false})
-}))
+export const useAuth = create<AuthState>((set) => ({
+  authinicated: false,
+  login: () => set({ authinicated: true }),
+  logout: () => set({ authinicated: false }),
+}));

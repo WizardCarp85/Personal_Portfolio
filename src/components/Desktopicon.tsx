@@ -2,6 +2,7 @@ import React, {type ComponentType, type ReactElement, type ReactNode } from 'rea
 import { useWindowStore } from '../store/windows';
 import { Modal, TitleBar, useModal } from '@react95/core';
 
+
 const styles = {
   desktopIcon: {
     alignItems: "center",

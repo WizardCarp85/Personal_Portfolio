@@ -11,7 +11,7 @@ import {
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import Shutdown from "./Shutdown";
-import { useWindowsStore } from "../store/windows";
+import { useWindowStore } from "../store/windows";
 
 function Clock() {
   const [time, setTime] = useState(new Date());
@@ -30,7 +30,7 @@ function Clock() {
 
 function WindowBar() {
   const [showShutdown, setShowShutdown] = useState(false);
-  const { openWindow } = useWindowsStore();
+  const { openWindow } = useWindowStore();
   return (
     <>
       <TaskBar

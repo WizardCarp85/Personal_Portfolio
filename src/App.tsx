@@ -8,11 +8,12 @@ import { Video } from "@react95/core";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Game from "./components/Game";
+import "./index.css"
 
 function App() {
   const authinicated = useAuth((state) => state.authinicated);
   return (
-    <div style={{ width: "100%", background: "#098684", minHeight: "100vh",position:"relative" }}>
+    <div style={{ width: "100%", minHeight: "100vh",position:"relative" }} className="window">
       <img src="/logo.png" width={400} style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-70%)"}}/>
       {!authinicated && <Login />}
 
